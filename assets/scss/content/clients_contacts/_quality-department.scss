@@ -1,0 +1,53 @@
+.quality-department {
+    &__header {
+        font-family: $f_gothic;
+        font-weight: bold;
+        color: $white;
+        font-size: 37px;
+        letter-spacing: 4px;
+        padding-bottom: 45px;
+    }
+
+    &__break {
+        box-sizing: border-box;
+        max-width: 200px;
+        width: 100%;
+        padding: 17px;
+        background: $white;
+        color: $dark_blue;
+        border-radius: 7px;
+        font-family:  $f_gothic;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 20px;
+    }
+
+    &__mode {
+        box-sizing: border-box;
+        text-transform: uppercase;
+        max-width: 120px;
+        width: 100%;
+        font-family:  $f_gothic;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 1.5px;
+        // padding-left: 40px;
+    }
+
+    &__phone {
+        font-family: $f_gothic;
+        font-weight: 500;
+        color: $white;
+        font-size: 30px;
+        font-style: italic;
+        letter-spacing: 5px;
+        margin-right: 50px;
+    }
+}
+
+.quality-department-wrapper-mode {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}

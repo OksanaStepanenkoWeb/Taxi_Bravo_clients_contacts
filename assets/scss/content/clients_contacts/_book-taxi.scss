@@ -1,5 +1,39 @@
 .book-taxi {
     max-width: 480px;
     width: 100%;
-    background: red;
+
+    &__header {
+        border-bottom: 1px solid $gray;
+        font-family: $f_gothic;
+        font-weight: bold;
+        color: $dark_blue;
+        font-size: 37px;
+        padding-bottom: 35px;
+        letter-spacing: 2px;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    &__text-phone {
+        font-family: $f_gothic;
+        font-weight: bold;
+        color: $dark_blue;
+        font-size: 30px;
+        font-style: italic;
+        letter-spacing: 5px;
+        margin-right: 50px;
+    }
+
+    &__text-24-hours {
+        @include f_proxima_600;
+        color: $orange;
+        letter-spacing: 1.3px;
+    }
+
+
 }
