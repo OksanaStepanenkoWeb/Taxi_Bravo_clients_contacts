@@ -1,0 +1,31 @@
+.contacts {
+    max-width: 1760px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include max-screen(1700px) {
+        max-width: 1200px;
+        width: 100%;
+    }
+    //
+    // @include max-screen(1200px) {
+    //     max-width: 560px;
+    //     width: 100%;
+    // }
+
+    &__item {
+       max-width: 880px;
+       width: 100%;
+       background: $light_gray;
+       border-radius: 7px;
+       padding: 40px 45px 20px 40px;
+       color: $dark_blue;
+
+       &_department {
+           max-width: 450px;
+           width: 100%;
+           background: $orange;
+           color: $white
+       }
+    }
+}
