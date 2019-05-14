@@ -17,6 +17,11 @@
         justify-content: flex-start;
         align-items: center;
         padding-top: 30px;
+
+        @include max-screen(576px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__text-phone {
@@ -27,12 +32,21 @@
         font-style: italic;
         letter-spacing: 5px;
         margin-right: 50px;
+
+        @include max-screen(576px) {
+           margin-right: 0;
+           letter-spacing: 1px;
+        }
     }
 
     &__text-24-hours {
         @include f_proxima_600;
         color: $orange;
         letter-spacing: 1.3px;
+
+        @include max-screen(576px) {
+            margin-top: 5px;
+        }
     }
 
 

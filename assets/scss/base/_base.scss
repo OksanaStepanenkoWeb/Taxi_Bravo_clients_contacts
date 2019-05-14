@@ -26,6 +26,10 @@ main {
     z-index: 1;
     overflow: hidden;
     padding: 0 80px;
+
+    @include max-screen(1024px) {
+        padding: 0 20px;
+    }
 }
 
 header {

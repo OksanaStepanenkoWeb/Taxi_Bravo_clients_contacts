@@ -10,7 +10,8 @@
     padding-bottom: 50px;
 
     @include max-screen(1200px) {
-        max-width: 560px;
+        margin: 0 auto;
+        max-width: 450px;
     }
 
     &__number {
