@@ -14,9 +14,18 @@
         max-width: 450px;
     }
 
+    @include max-screen(480px) {
+        margin: 0 auto;
+        max-width: 320px;
+        width: 100%;
+    }
+
     &__number {
         font-size: 58px;
         color: $orange;
+        @include max-screen(480px) {
+            font-size: 53px;
+        }
     }
 
     &__wrap-text {
@@ -29,6 +38,9 @@
         font-size: 37px;
         color: $blue;
         text-transform: uppercase;
+        @include max-screen(480px) {
+            font-size: 31px;
+        }
 
         &_bolder {
             @include f_proxima_600;
